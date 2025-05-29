@@ -1,10 +1,13 @@
 import { BrowserRouter } from "react-router-dom"
 import Layout from "./components/Layout"
+import { ThemeProvider } from "./components/context/Theme-provider"
 
 function App() {
   return (
     <BrowserRouter>
-    <Layout>Hello</Layout>
+      <ThemeProvider defaultTheme="dark">
+        <Layout>Hello</Layout>
+      </ThemeProvider>
     </BrowserRouter>
   )
 }

@@ -15,7 +15,7 @@ const Layout = ({ children }: PropsWithChildren) => {
       </main>
 
       {/* Footer */}
-      <footer className="border-t mt-8 py-6 px-4 sm:px-6 lg:px-8 text-sm text-center space-y-2">
+      <footer className="border-t mt-8 py-6 px-4 sm:px-6 lg:px-8 text-sm text-center space-y-2 supports-[backdrop-filter]: bg-background/60">
         <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
         <p>Built with ❤️ by the {SITE_NAME} team.</p>
         <p className="space-x-2">
