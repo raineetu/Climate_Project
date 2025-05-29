@@ -2,7 +2,7 @@
 const CityPages = () => {
   return (
     <div>
-      
+      Hello city
     </div>
   )
 }
