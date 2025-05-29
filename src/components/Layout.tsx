@@ -3,14 +3,14 @@ import {SITE_NAME} from "../constants/constants"
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-muted">
+    <div className=" bg-gradient-to-br from-background to-muted">
       {/* Header */}
       <header className="w-full py-4 px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-xl font-bold sm:text-2xl">{SITE_NAME}</h1>
       </header>
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <main className="min-h-screen container mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {children}
       </main>
 
