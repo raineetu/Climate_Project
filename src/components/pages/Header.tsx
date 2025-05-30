@@ -2,6 +2,7 @@ import { SITE_NAME } from "@/constants/constants"
 import { Link } from "react-router-dom"
 import logo from "../../../public/images.png"
 import { useTheme } from "../context/Theme-provider"
+import { Moon, Sun } from "lucide-react"
 
 const Header = () => {
     const {theme, setTheme} = useTheme();
@@ -14,6 +15,18 @@ const Header = () => {
                 <img src={logo} alt="logo" className="h-17"/>
                 <h1 className="text-xl font-bold sm:text-2xl">{SITE_NAME}</h1>
             </Link>
+
+           <div
+              onClick={() => setTheme(isDark ? "light" : "dark")}
+              className="cursor-pointer"
+            >
+              {isDark ? (
+                <Sun className="w-7 h-7 text-yellow-400 transform rotate-[360deg] transition-transform duration-700 ease-in-out" />
+              ) : (
+                <Moon className="w-6 h-6 text-blue-400 transform rotate-[360deg] transition-transform duration-700 ease-in-out" />
+              )}
+            </div>
+
 
             <div>
 
