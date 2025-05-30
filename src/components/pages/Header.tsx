@@ -18,12 +18,12 @@ const Header = () => {
 
            <div
               onClick={() => setTheme(isDark ? "light" : "dark")}
-              className="cursor-pointer"
+              className={`cursor-pointer transition-transform duration-500 ${isDark ? "rotate-100" : "rotate-0"}`}
             >
               {isDark ? (
-                <Sun className="w-7 h-7 text-yellow-400 transform rotate-[360deg] transition-transform duration-700 ease-in-out" />
+                <Sun className="w-7 h-7 text-yellow-400 rotate-0 transition-all" />
               ) : (
-                <Moon className="w-6 h-6 text-blue-400 transform rotate-[360deg] transition-transform duration-700 ease-in-out" />
+                <Moon className="w-6 h-6 text-blue-400 rotate-0 transition-all" />
               )}
             </div>
 
